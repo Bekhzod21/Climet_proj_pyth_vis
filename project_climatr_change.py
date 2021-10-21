@@ -13,3 +13,6 @@ print("now in main")
 
 print("where it is?")
 
+gt=pd.read_csv('GHCND_sample_csv.csv')
+
+gt.describe

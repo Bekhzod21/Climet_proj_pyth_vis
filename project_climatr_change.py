@@ -20,5 +20,5 @@ print("k")
 
 print("done?")
 
-at = pd.read_csv('Environment_Temperature_change_E_All_Data_(Normalized).csv')
+at = pd.read_csv(r'C:\Users\Behzod\Documents\python\python tutorials_QY\python project climate\Climet_proj_pyth_vis-1\Environment_Temperature_change_E_All_Data_Normalized.csv', encoding="cp1252")
 print(at)

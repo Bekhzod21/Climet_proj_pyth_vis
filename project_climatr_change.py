@@ -17,5 +17,8 @@ gt = pd.read_csv('GHCND_sample_csv.csv')
 
 gt.describe
 print("k")
-at = pd.read_csv('Environment_Temperature_change_E_All_Data_(Normalized).csv')
+
 print("done?")
+
+at = pd.read_csv('Environment_Temperature_change_E_All_Data_(Normalized).csv')
+print(at)

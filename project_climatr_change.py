@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import scipy.stats
 import seaborn as sns
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 
 print("REALLY?")
@@ -31,6 +31,6 @@ df.describe()
 print('d')
 
 df[['Area', 'Value']].groupby(['Area']).mean().sort_values('Value')
-#plt.figure(figsize=(9, 4))
+plt.figure(figsize=(9, 4))
 sns.lineplot(x="Year", y="Value", data=df)
 plt.show()

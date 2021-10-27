@@ -34,4 +34,4 @@ df[['Area', 'Value']].groupby(['Area']).mean().sort_values('Value')
 plt.figure(figsize=(9, 4))
 sns.lineplot(x="Year", y="Value", data=df)
 plt.show()
-df.head
+df.head()

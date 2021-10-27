@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
-import scipy.stats
+import scipy.stats as sct
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import plotly.express as px
 
 print("REALLY?")
 # news
@@ -35,3 +35,5 @@ plt.figure(figsize=(9, 4))
 sns.lineplot(x="Year", y="Value", data=df)
 plt.show()
 df.head()
+fig2 = px.scatter(df, x="Year", y="Value", color="Area")
+fig2.show()

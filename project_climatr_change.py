@@ -27,6 +27,8 @@ print("done?")
 df = pd.read_csv(r'C:\Users\Behzod\Documents\python\python tutorials_QY\python project climate\Climet_proj_pyth_vis-1\Environment_Temperature_change_E_All_Data_Normalized.csv', encoding="latin1")
 print(df)
 
+df.dtypes
+
 df.describe()
 print('d')
 
@@ -37,3 +39,7 @@ plt.show()
 df.head()
 fig2 = px.scatter(df, x="Year", y="Value", color="Area")
 fig2.show()
+
+
+fig3 = px.line(df[df["Area"] == "Uzbekistan"], x="Year", y="Value")
+fig3.show()

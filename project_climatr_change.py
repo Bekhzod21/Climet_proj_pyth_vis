@@ -43,3 +43,12 @@ fig2.show()
 
 fig3 = px.line(df[df["Area"] == "Uzbekistan"], x="Year", y="Value")
 fig3.show()
+
+
+fig = px.choropleth(df, locations="Area",
+                    locationmode='country names', color="Value",
+                    hover_name="Area", range_color=[1, 1000],
+                    color_continuous_scale="blues",
+                    title="Climate change in 2020")
+fig.update(layout_coloraxis_showscale=True)
+fig.show()
